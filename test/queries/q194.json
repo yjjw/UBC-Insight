@@ -1,0 +1,18 @@
+{
+    "title": "cover IS name",
+    "query": {
+        "WHERE": {
+            "IS": {
+                "rooms_name": "MATH_105"
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "rooms_address"
+            ]
+        }
+    },
+    "isQueryValid": true,
+    "result":[{"rooms_address":"1984 Mathematics Road"}]
+}
+

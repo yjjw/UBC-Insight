@@ -1,0 +1,19 @@
+{
+    "title": "cover LT courses_fail",
+    "query": {
+        "WHERE": {
+            "LT": {
+                "courses_fail": 0
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_avg"
+            ],
+            "ORDER": "courses_avg"
+        }
+    },
+    "isQueryValid": true,
+    "result":[]
+}

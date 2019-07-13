@@ -1,0 +1,23 @@
+{
+    "title": "query Should be able to find all rooms2 of a certain type",
+    "query": {
+        "WHERE": {
+            "IS": {
+                "rooms2_type": "Case Style"
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "rooms2_name"
+            ],
+            "ORDER": {
+                "dir": "DOWN",
+                "keys": [
+                    "rooms2_name"
+                ]
+            }
+        }
+    },
+    "isQueryValid": true,
+    "result":[{"rooms2_name":"MCML_160"},{"rooms2_name":"IONA_301"},{"rooms2_name":"IBLC_155"},{"rooms2_name":"FSC_1003"},{"rooms2_name":"FSC_1001"},{"rooms2_name":"CEME_1215"},{"rooms2_name":"CEME_1212"},{"rooms2_name":"CEME_1204"},{"rooms2_name":"BUCH_D222"},{"rooms2_name":"BUCH_B215"},{"rooms2_name":"BUCH_B213"},{"rooms2_name":"BUCH_B208"},{"rooms2_name":"BUCH_A203"},{"rooms2_name":"BUCH_A202"},{"rooms2_name":"ANGU_434"},{"rooms2_name":"ANGU_335"},{"rooms2_name":"ANGU_334"},{"rooms2_name":"ANGU_237"},{"rooms2_name":"ANGU_235"},{"rooms2_name":"ANGU_234"},{"rooms2_name":"ANGU_039"},{"rooms2_name":"ANGU_037"},{"rooms2_name":"ALRD_121"},{"rooms2_name":"ALRD_105"}]
+}

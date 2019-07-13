@@ -1,0 +1,56 @@
+{
+    "title": "test multiple apply rule",
+    "query": {
+        "WHERE": {
+            "AND": [
+                {
+                    "IS": {
+                        "rooms_type": "Small Group"
+                    }
+                },
+                {
+                    "LT": {
+                        "rooms_seats": 80
+                    }
+                }
+            ]
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "rooms_shortname",
+                "sumSeats",
+                "avgSeats"
+            ],
+            "ORDER": {
+                "dir": "DOWN",
+                "keys": [
+                    "sumSeats",
+                    "rooms_shortname"
+                ]
+            }
+        },
+        "TRANSFORMATIONS": {
+            "GROUP": [
+                "rooms_shortname"
+            ],
+            "APPLY": [
+                {
+                    "sumSeats": {
+                        "SUM": "rooms_seats"
+                    }
+                },
+                {
+                    "avgSeats": {
+                        "AVG": "rooms_seats"
+                    }
+                }
+            ]
+        }
+    },
+    "isQueryValid": true,
+    "result":[{"rooms_shortname":"BUCH","sumSeats":729,"avgSeats":27},{"rooms_shortname":"SCRF","sumSeats":724,"avgSeats":34.48},{"rooms_shortname":"IBLC","sumSeats":252,"avgSeats":16.8},{"rooms_shortname":"SWNG","sumSeats":243,"avgSeats":27},{"rooms_shortname":"MCML","sumSeats":180,"avgSeats":12},{"rooms_shortname":"WOOD","sumSeats":165,"avgSeats":16.5},{"rooms_shortname":"FSC","sumSeats":142,"avgSeats":23.67},{"rooms_shortname":"PCOH","sumSeats":120,"avgSeats":24},{"rooms_shortname":"MATH","sumSeats":115,"avgSeats":38.33},{"rooms_shortname":"SPPH","sumSeats":100,"avgSeats":20},{"rooms_shortname":"HENN","sumSeats":96,"avgSeats":32},{"rooms_shortname":"ANSO","sumSeats":96,"avgSeats":32},{"rooms_shortname":"ANGU","sumSeats":87,"avgSeats":21.75},{"rooms_shortname":"DMP","sumSeats":80,"avgSeats":40},{"rooms_shortname":"OSBO","sumSeats":79,"avgSeats":39.5},{"rooms_shortname":"FORW","sumSeats":79,"avgSeats":39.5},{"rooms_shortname":"FNH","sumSeats":67,"avgSeats":22.33},{"rooms_shortname":"PHRM","sumSeats":63,"avgSeats":7.88},{"rooms_shortname":"GEOG","sumSeats":60,"avgSeats":30},{"rooms_shortname":"CEME","sumSeats":48,"avgSeats":24},{"rooms_shortname":"SOWK","sumSeats":44,"avgSeats":14.67},{"rooms_shortname":"AUDX","sumSeats":41,"avgSeats":20.5},{"rooms_shortname":"MCLD","sumSeats":40,"avgSeats":40},{"rooms_shortname":"LASR","sumSeats":40,"avgSeats":20},{"rooms_shortname":"BIOL","sumSeats":32,"avgSeats":16},{"rooms_shortname":"UCLL","sumSeats":30,"avgSeats":30}]
+}
+
+
+
+

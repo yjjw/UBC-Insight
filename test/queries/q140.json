@@ -1,0 +1,33 @@
+{
+    "title": "cover LT coures_year",
+    "query": {
+        "WHERE": {
+            "AND": [
+                {
+                    "LT": {
+                        "courses_year": 2010
+                    }
+                },
+                {
+                    "IS": {
+                        "courses_id": "313"
+                    }
+                }
+            ]
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_id",
+                "courses_avg"
+            ],
+            "ORDER": "courses_avg"
+        }
+    },
+    "isQueryValid": true,
+    "result":[{"courses_dept":"math","courses_id":"313","courses_avg":66.94},{"courses_dept":"math","courses_id":"313","courses_avg":67.19},{"courses_dept":"chem","courses_id":"313","courses_avg":68.97},{"courses_dept":"chem","courses_id":"313","courses_avg":69},{"courses_dept":"chem","courses_id":"313","courses_avg":69},{"courses_dept":"ling","courses_id":"313","courses_avg":69.45},{"courses_dept":"chem","courses_id":"313","courses_avg":69.45},{"courses_dept":"ling","courses_id":"313","courses_avg":70.09},{"courses_dept":"cpsc","courses_id":"313","courses_avg":70.76},{"courses_dept":"fnh","courses_id":"313","courses_avg":70.93},{"courses_dept":"math","courses_id":"313","courses_avg":71.05},{"courses_dept":"math","courses_id":"313","courses_avg":71.05},{"courses_dept":"chem","courses_id":"313","courses_avg":71.12},{"courses_dept":"cpsc","courses_id":"313","courses_avg":71.24},{"courses_dept":"cpsc","courses_id":"313","courses_avg":71.44},{"courses_dept":"cpsc","courses_id":"313","courses_avg":71.59},{"courses_dept":"cpsc","courses_id":"313","courses_avg":71.92},{"courses_dept":"hist","courses_id":"313","courses_avg":71.95},{"courses_dept":"cpsc","courses_id":"313","courses_avg":72.21},{"courses_dept":"chem","courses_id":"313","courses_avg":72.43},{"courses_dept":"cpsc","courses_id":"313","courses_avg":72.75},{"courses_dept":"ling","courses_id":"313","courses_avg":72.76},{"courses_dept":"cpsc","courses_id":"313","courses_avg":72.86},{"courses_dept":"chin","courses_id":"313","courses_avg":73.04},{"courses_dept":"cpsc","courses_id":"313","courses_avg":73.18},{"courses_dept":"hist","courses_id":"313","courses_avg":73.46},{"courses_dept":"cpsc","courses_id":"313","courses_avg":73.72},{"courses_dept":"cpsc","courses_id":"313","courses_avg":73.83},{"courses_dept":"chin","courses_id":"313","courses_avg":73.91},{"courses_dept":"hist","courses_id":"313","courses_avg":74.12},{"courses_dept":"cpsc","courses_id":"313","courses_avg":74.13},{"courses_dept":"cpsc","courses_id":"313","courses_avg":74.26},{"courses_dept":"chin","courses_id":"313","courses_avg":74.41},{"courses_dept":"chin","courses_id":"313","courses_avg":74.61},{"courses_dept":"chem","courses_id":"313","courses_avg":74.62},{"courses_dept":"ling","courses_id":"313","courses_avg":74.72},{"courses_dept":"chin","courses_id":"313","courses_avg":74.88},{"courses_dept":"cpsc","courses_id":"313","courses_avg":75.02},{"courses_dept":"cpsc","courses_id":"313","courses_avg":75.15},{"courses_dept":"chin","courses_id":"313","courses_avg":75.4},{"courses_dept":"fnh","courses_id":"313","courses_avg":75.55},{"courses_dept":"chin","courses_id":"313","courses_avg":75.57},{"courses_dept":"cpsc","courses_id":"313","courses_avg":75.69},{"courses_dept":"chin","courses_id":"313","courses_avg":75.7},{"courses_dept":"chem","courses_id":"313","courses_avg":75.96},{"courses_dept":"chin","courses_id":"313","courses_avg":76.09},{"courses_dept":"chin","courses_id":"313","courses_avg":76.12},{"courses_dept":"hist","courses_id":"313","courses_avg":76.2},{"courses_dept":"chin","courses_id":"313","courses_avg":76.63},{"courses_dept":"fnh","courses_id":"313","courses_avg":76.71},{"courses_dept":"fnh","courses_id":"313","courses_avg":76.71},{"courses_dept":"fnh","courses_id":"313","courses_avg":76.78},{"courses_dept":"math","courses_id":"313","courses_avg":76.93},{"courses_dept":"chin","courses_id":"313","courses_avg":77.3},{"courses_dept":"cpsc","courses_id":"313","courses_avg":77.51},{"courses_dept":"fnh","courses_id":"313","courses_avg":77.66},{"courses_dept":"fnh","courses_id":"313","courses_avg":77.66},{"courses_dept":"hist","courses_id":"313","courses_avg":77.69},{"courses_dept":"germ","courses_id":"313","courses_avg":78.41},{"courses_dept":"fnh","courses_id":"313","courses_avg":79.05},{"courses_dept":"fnh","courses_id":"313","courses_avg":79.09},{"courses_dept":"fnh","courses_id":"313","courses_avg":79.21},{"courses_dept":"fnh","courses_id":"313","courses_avg":79.64},{"courses_dept":"fnh","courses_id":"313","courses_avg":79.64},{"courses_dept":"cpsc","courses_id":"313","courses_avg":79.76},{"courses_dept":"cpsc","courses_id":"313","courses_avg":79.76},{"courses_dept":"musc","courses_id":"313","courses_avg":80.16},{"courses_dept":"musc","courses_id":"313","courses_avg":80.16},{"courses_dept":"musc","courses_id":"313","courses_avg":81.19},{"courses_dept":"musc","courses_id":"313","courses_avg":82.05},{"courses_dept":"germ","courses_id":"313","courses_avg":82.2},{"courses_dept":"cpsc","courses_id":"313","courses_avg":82.27},{"courses_dept":"musc","courses_id":"313","courses_avg":82.94},{"courses_dept":"germ","courses_id":"313","courses_avg":82.96},{"courses_dept":"germ","courses_id":"313","courses_avg":82.96},{"courses_dept":"musc","courses_id":"313","courses_avg":83},{"courses_dept":"musc","courses_id":"313","courses_avg":83},{"courses_dept":"musc","courses_id":"313","courses_avg":83.13},{"courses_dept":"germ","courses_id":"313","courses_avg":83.35},{"courses_dept":"musc","courses_id":"313","courses_avg":84.27},{"courses_dept":"musc","courses_id":"313","courses_avg":84.27},{"courses_dept":"germ","courses_id":"313","courses_avg":84.41},{"courses_dept":"germ","courses_id":"313","courses_avg":84.41},{"courses_dept":"musc","courses_id":"313","courses_avg":84.46},{"courses_dept":"germ","courses_id":"313","courses_avg":84.63},{"courses_dept":"musc","courses_id":"313","courses_avg":85.45},{"courses_dept":"germ","courses_id":"313","courses_avg":86.32},{"courses_dept":"germ","courses_id":"313","courses_avg":86.32},{"courses_dept":"germ","courses_id":"313","courses_avg":90}]}
+
+
+
+
+

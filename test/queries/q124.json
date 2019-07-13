@@ -1,0 +1,21 @@
+{
+    "title": "cover EQ courses_audit",
+    "query": {
+        "WHERE": {
+            "EQ": {
+                "courses_audit": 10
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_title",
+                "courses_audit",
+                "courses_avg"
+            ],
+            "ORDER": "courses_avg"
+        }
+    },
+    "isQueryValid": true,
+    "result":[{"courses_dept":"frst","courses_title":"adv biometrics","courses_audit":10,"courses_avg":77.36},{"courses_dept":"frst","courses_title":"mult regres meth","courses_audit":10,"courses_avg":85.14},{"courses_dept":"frst","courses_title":"mult regres meth","courses_audit":10,"courses_avg":85.14},{"courses_dept":"rhsc","courses_title":"rehab learning","courses_audit":10,"courses_avg":85.73},{"courses_dept":"rhsc","courses_title":"eval src evidenc","courses_audit":10,"courses_avg":91.4}]
+}

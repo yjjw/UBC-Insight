@@ -1,0 +1,19 @@
+{
+    "title": "q31000000000000000000",
+    "query": {
+        "WHERE": {
+            "GThan": {
+                "courses_avg":97
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_avg"
+            ],
+            "ORDER": "courses_avg"
+        }
+    },
+    "isQueryValid": false,
+    "result": "Not implemented."
+}

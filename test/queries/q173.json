@@ -1,0 +1,33 @@
+{
+    "title": "Should be able to sort in reverse order",
+    "query": {
+        "WHERE": {
+            "AND": [
+                {
+                    "IS": {
+                        "rooms_furniture": "*Tables*"
+                    }
+                },
+                {
+                    "GT": {
+                        "rooms_seats": 300
+                    }
+                }
+            ]
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "rooms_shortname",
+                "rooms_href"
+            ],
+            "ORDER": {
+                "dir": "UP",
+                "keys": [
+                    "rooms_href"
+                ]
+            }
+        }
+    },
+    "isQueryValid": true,
+    "result":[{"rooms_shortname":"HEBB","rooms_href":"http://students.ubc.ca/campus/discover/buildings-and-classrooms/room/HEBB-100"},{"rooms_shortname":"LSC","rooms_href":"http://students.ubc.ca/campus/discover/buildings-and-classrooms/room/LSC-1001"},{"rooms_shortname":"LSC","rooms_href":"http://students.ubc.ca/campus/discover/buildings-and-classrooms/room/LSC-1002"},{"rooms_shortname":"OSBO","rooms_href":"http://students.ubc.ca/campus/discover/buildings-and-classrooms/room/OSBO-A"}]
+}

@@ -1,0 +1,29 @@
+{
+    "title": "cover IS key.course",
+    "query": {
+        "WHERE": {
+            "AND": [
+                {
+                    "GT": {
+                        "courses_avg": 85
+                    }
+                },
+                {
+                    "IS": {
+                        "courses_id": "327"
+                    }
+                }
+            ]
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_id",
+                "courses_avg"
+            ],
+            "ORDER": "courses_avg"
+        }
+    },
+    "isQueryValid": true,
+    "result":[{"courses_dept":"adhe","courses_id":"327","courses_avg":85.04},{"courses_dept":"adhe","courses_id":"327","courses_avg":85.12},{"courses_dept":"path","courses_id":"327","courses_avg":85.54},{"courses_dept":"path","courses_id":"327","courses_avg":85.54},{"courses_dept":"adhe","courses_id":"327","courses_avg":85.6},{"courses_dept":"adhe","courses_id":"327","courses_avg":85.64},{"courses_dept":"adhe","courses_id":"327","courses_avg":85.81},{"courses_dept":"adhe","courses_id":"327","courses_avg":85.81},{"courses_dept":"adhe","courses_id":"327","courses_avg":86.16},{"courses_dept":"adhe","courses_id":"327","courses_avg":86.17},{"courses_dept":"adhe","courses_id":"327","courses_avg":86.2},{"courses_dept":"adhe","courses_id":"327","courses_avg":86.59},{"courses_dept":"adhe","courses_id":"327","courses_avg":86.59},{"courses_dept":"adhe","courses_id":"327","courses_avg":86.59},{"courses_dept":"adhe","courses_id":"327","courses_avg":86.65},{"courses_dept":"adhe","courses_id":"327","courses_avg":87.15},{"courses_dept":"adhe","courses_id":"327","courses_avg":87.5},{"courses_dept":"adhe","courses_id":"327","courses_avg":88.23},{"courses_dept":"econ","courses_id":"327","courses_avg":88.33},{"courses_dept":"econ","courses_id":"327","courses_avg":88.33},{"courses_dept":"adhe","courses_id":"327","courses_avg":88.53},{"courses_dept":"adhe","courses_id":"327","courses_avg":88.53},{"courses_dept":"adhe","courses_id":"327","courses_avg":89.28},{"courses_dept":"adhe","courses_id":"327","courses_avg":89.51}]
+}

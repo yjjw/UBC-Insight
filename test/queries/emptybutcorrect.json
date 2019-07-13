@@ -1,0 +1,27 @@
+{
+  "title": "Empty but valid",
+  "query":{
+    "WHERE": {
+        "AND":[
+            {
+                "GT": {
+                    "courses_avg": 97
+                }
+            },
+            {"LT":{
+                "courses_avg": 96
+            }
+            }
+        ]
+    },
+    "OPTIONS": {
+        "COLUMNS": [
+            "courses_dept",
+            "courses_avg"
+        ],
+        "ORDER": "courses_avg"
+    }
+},
+  "isQueryValid": true,
+  "result": []
+}

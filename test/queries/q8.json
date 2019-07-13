@@ -1,0 +1,14 @@
+{
+  "title": "888888888",
+  "query": {
+    "WHERE": {
+        "GT": {
+            "courses_avg": 97
+        }
+    },
+    "OPTIONS": {
+    }
+},
+  "isQueryValid": false,
+  "result": "Not implemented."
+}

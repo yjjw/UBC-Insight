@@ -1,0 +1,21 @@
+{
+    "title": "cover EQ lon",
+    "query": {
+        "WHERE": {
+            "EQ": {
+                "rooms_lon": -123.25318
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "rooms_type"
+            ]
+        }
+    },
+    "isQueryValid": true,
+    "result":[{"rooms_type":"Case Style"},{"rooms_type":"Open Design General Purpose"},{"rooms_type":"Open Design General Purpose"},{"rooms_type":"Case Style"},{"rooms_type":"Open Design General Purpose"}]
+}
+
+
+
+

@@ -1,0 +1,28 @@
+{
+    "title": "Is with ast invalid",
+    "query": {
+        "WHERE": {
+            "AND":[
+                {
+                    "GT": {
+                        "courses_avg":98
+                    }
+                },
+                {
+                    "IS": {
+                        "courses_dept":"c*sc"
+                    }
+                }
+            ]
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_avg"
+            ],
+            "ORDER": "courses_avg"
+        }
+    },
+    "isQueryValid": false,
+    "result": "Not implemented."
+}

@@ -1,0 +1,18 @@
+{
+    "title": "test room is with different key",
+    "query": {
+        "WHERE": {
+            "IS": {
+                "rooms_shortname": "DMP"
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "rooms_seats",
+                "rooms_href"
+            ]
+        }
+    },
+    "isQueryValid": true,
+    "result":[{"rooms_seats":40,"rooms_href":"http://students.ubc.ca/campus/discover/buildings-and-classrooms/room/DMP-101"},{"rooms_seats":120,"rooms_href":"http://students.ubc.ca/campus/discover/buildings-and-classrooms/room/DMP-110"},{"rooms_seats":40,"rooms_href":"http://students.ubc.ca/campus/discover/buildings-and-classrooms/room/DMP-201"},{"rooms_seats":80,"rooms_href":"http://students.ubc.ca/campus/discover/buildings-and-classrooms/room/DMP-301"},{"rooms_seats":160,"rooms_href":"http://students.ubc.ca/campus/discover/buildings-and-classrooms/room/DMP-310"}]
+}

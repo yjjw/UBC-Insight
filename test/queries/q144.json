@@ -1,0 +1,24 @@
+{
+    "title": "test room is",
+    "query": {
+        "WHERE": {
+            "IS": {
+                "rooms_shortname": "ALRD"
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "rooms_name",
+                "rooms_href"
+            ],
+            "ORDER": {
+                "dir": "DOWN",
+                "keys": [
+                    "rooms_href"
+                ]
+            }
+        }
+    },
+    "isQueryValid": true,
+    "result":[{"rooms_name":"ALRD_B101","rooms_href":"http://students.ubc.ca/campus/discover/buildings-and-classrooms/room/ALRD-B101"},{"rooms_name":"ALRD_121","rooms_href":"http://students.ubc.ca/campus/discover/buildings-and-classrooms/room/ALRD-121"},{"rooms_name":"ALRD_113","rooms_href":"http://students.ubc.ca/campus/discover/buildings-and-classrooms/room/ALRD-113"},{"rooms_name":"ALRD_112","rooms_href":"http://students.ubc.ca/campus/discover/buildings-and-classrooms/room/ALRD-112"},{"rooms_name":"ALRD_105","rooms_href":"http://students.ubc.ca/campus/discover/buildings-and-classrooms/room/ALRD-105"}]
+}

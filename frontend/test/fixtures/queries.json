@@ -1,0 +1,25 @@
+{
+    "query1": {"WHERE":{"NOT":{"OR":[{"LT":{"courses_fail":200}},{"GT":{"courses_audit":20}}]}},"OPTIONS":{"COLUMNS":["courses_audit","courses_avg","courses_uuid"],"ORDER":"courses_avg"}},
+    "query2": {
+        "WHERE": {
+            "IS": {
+                "courses_dept": "cpsc"
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_id"
+            ],
+            "ORDER": "courses_id"
+        }
+    },
+    "query3": {"WHERE":{"AND":[{"LT":{"courses_fail":200}},{"GT":{"courses_audit":20}}]},"OPTIONS":{"COLUMNS":["courses_avg","courses_dept","courses_id","courses_uuid"],"ORDER":"courses_avg"}},
+    "query4": {"WHERE":{"AND":[{"IS":{"courses_dept":"cpsc"}},{"GT":{"courses_audit":20}}]},"OPTIONS":{"COLUMNS":["courses_avg","courses_dept","courses_id","courses_uuid"],"ORDER":"courses_avg"}},
+    "query5": {"WHERE":{"AND":[{"IS":{"courses_dept":"cpsc"}},{"NOT": {"GT":{"courses_audit":20}}}]},"OPTIONS":{"COLUMNS":["courses_avg","courses_dept","courses_id","courses_uuid"],"ORDER":"courses_avg"}},
+    "query6": {"WHERE":{"AND":[{"GT":{"rooms_seats":120}},{"IS":{"rooms_shortname":"BUCH"}}]},"OPTIONS":{"COLUMNS":["rooms_name","rooms_seats","rooms_shortname"],"ORDER":{"dir":"DOWN","keys":["rooms_seats"]}}},
+    "query7": {"WHERE":{"GT":{"rooms_seats":120}},"OPTIONS":{"COLUMNS":["rooms_name","rooms_seats","countF","avgS"],"ORDER":{"dir":"DOWN","keys":["rooms_name","rooms_seats"]}},"TRANSFORMATIONS":{"GROUP":["rooms_name","rooms_seats"],"APPLY":[{"countF":{"COUNT":"rooms_furniture"}},{"avgS":{"AVG":"rooms_seats"}}]}},
+    "query8": {"WHERE":{"OR":[{"GT":{"rooms_seats":120}},{"IS":{"rooms_shortname":"BUCH"}}]},"OPTIONS":{"COLUMNS":["rooms_seats","rooms_shortname","countF","avgS"],"ORDER":{"dir":"DOWN","keys":["rooms_seats","rooms_shortname"]}},"TRANSFORMATIONS":{"GROUP":["rooms_seats","rooms_shortname"],"APPLY":[{"countF":{"COUNT":"rooms_furniture"}},{"avgS":{"AVG":"rooms_seats"}}]}},
+    "query9": {"WHERE":{"AND":[{"IS":{"rooms_address":"14541"}},{"EQ":{"rooms_lat":45341}},{"EQ":{"rooms_lon":324}},{"EQ":{"rooms_seats":6525}}]},"OPTIONS":{"COLUMNS":["rooms_address","rooms_fullname","rooms_lat","rooms_lon","rooms_seats"],"ORDER":"rooms_address"}},
+    "query10": {"WHERE":{"AND":[{"IS":{"rooms_address":"14541"}},{"NOT":{"EQ":{"rooms_lat":45341}}},{"NOT":{"EQ":{"rooms_lon":324}}},{"EQ":{"rooms_seats":6525}}]},"OPTIONS":{"COLUMNS":["rooms_address","rooms_fullname","rooms_lat","rooms_lon","rooms_seats"],"ORDER":"rooms_address"}}
+}

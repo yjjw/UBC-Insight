@@ -1,0 +1,16 @@
+{
+    "title": "m1500000000",
+    "query": {
+        "WHERE": {
+            "IS": {
+                "courses_dept": true
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": ["courses_dept", "courses_avg"],
+            "ORDER": "courses_avg"
+        }
+    },
+    "isQueryValid": false,
+    "result": "Not implemented."
+}

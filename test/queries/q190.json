@@ -1,0 +1,31 @@
+{
+    "title": "test columns with key in apply, but no in group",
+    "query": {
+        "WHERE": {
+            "GT": {
+                "rooms_seats": 320
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "overallAvg"
+            ]
+        },
+        "TRANSFORMATIONS": {
+            "GROUP": [
+                "rooms_shortname"
+            ],
+            "APPLY": [
+                {
+                    "overallAvg": {
+                        "AVG": "rooms_seats"
+                    }
+                }
+            ]
+        }
+    },
+    "isQueryValid": true,
+    "result":[{"overallAvg":426},{"overallAvg":350},{"overallAvg":375},{"overallAvg":350},{"overallAvg":442},{"overallAvg":325},{"overallAvg":503}]
+}
+
+

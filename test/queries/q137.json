@@ -1,0 +1,30 @@
+{
+    "title": "cover GT coures_year",
+    "query": {
+        "WHERE": {
+            "AND": [
+                {
+                    "GT": {
+                        "courses_year": 2015
+                    }
+                },
+                {
+                    "IS": {
+                        "courses_id": "327"
+                    }
+                }
+            ]
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_id",
+                "courses_avg"
+            ],
+            "ORDER": "courses_avg"
+        }
+    },
+    "isQueryValid": true,
+    "result":[{"courses_dept":"econ","courses_id":"327","courses_avg":74.2},{"courses_dept":"adhe","courses_id":"327","courses_avg":75.71},{"courses_dept":"poli","courses_id":"327","courses_avg":76.44},{"courses_dept":"adhe","courses_id":"327","courses_avg":79.88}]}
+
+

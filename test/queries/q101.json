@@ -1,0 +1,21 @@
+{
+    "title": "test string on GT",
+    "query": {
+        "WHERE": {
+            "AND": [
+                {
+                    "GT": {
+                        "courses_dept": "adhe"
+                    }
+                },
+                {
+                    "IS": {
+                        "courses_dept": "cpsc"
+                    }
+                }
+            ]
+        }
+    },
+    "isQueryValid": false,
+    "result": "Not implemented."
+}

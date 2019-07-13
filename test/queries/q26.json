@@ -1,0 +1,24 @@
+{
+    "title": "25000000000 incorrect logic filter",
+  "query": {
+      "WHERE": {
+          "AND":[
+              {
+                  "GT": {
+                      "courses_avg":90
+                  }
+              },
+              {}
+          ]
+      },
+      "OPTIONS": {
+          "COLUMNS": [
+              "courses_dept",
+              "courses_avg"
+          ],
+          "ORDER": "courses_avg"
+      }
+},
+  "isQueryValid": false,
+  "result": "Not implemented."
+}

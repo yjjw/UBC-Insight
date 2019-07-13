@@ -1,0 +1,20 @@
+{
+    "title": "cover EQ lat",
+    "query": {
+        "WHERE": {
+            "EQ": {
+                "rooms_lat": 49.2699
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "rooms_name"
+            ]
+        }
+    },
+    "isQueryValid": true,
+    "result":[{"rooms_name":"ALRD_105"},{"rooms_name":"ALRD_112"},{"rooms_name":"ALRD_113"},{"rooms_name":"ALRD_121"},{"rooms_name":"ALRD_B101"}]
+}
+
+
+

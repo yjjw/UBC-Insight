@@ -1,0 +1,36 @@
+{
+    "title": "test room columns",
+    "query": {
+        "WHERE": {
+            "OR": [
+                {
+                    "IS": {
+                        "rooms_number": "105"
+                    }
+                },
+                {
+                    "EQ": {
+                        "rooms_lon": -123
+                    }
+                }
+            ]
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "rooms_name",
+                "rooms_shortname",
+                "rooms_fullname"
+            ],
+            "ORDER": {
+                "dir": "DOWN",
+                "keys": [
+                    "rooms_name",
+                    "rooms_shortname",
+                    "rooms_fullname"
+                ]
+            }
+        }
+    },
+    "isQueryValid": true,
+    "result":[{"rooms_name":"SWNG_105","rooms_shortname":"SWNG","rooms_fullname":"West Mall Swing Space"},{"rooms_name":"MATH_105","rooms_shortname":"MATH","rooms_fullname":"Mathematics"},{"rooms_name":"LASR_105","rooms_shortname":"LASR","rooms_fullname":"Frederic Lasserre"},{"rooms_name":"ALRD_105","rooms_shortname":"ALRD","rooms_fullname":"Allard Hall (LAW)"}]
+}

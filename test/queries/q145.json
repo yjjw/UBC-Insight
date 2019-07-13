@@ -1,0 +1,36 @@
+{
+    "title": "test room AND OR",
+    "query": {
+        "WHERE": {
+            "OR": [
+                {
+                    "AND": [
+                        {
+                            "GT": {
+                                "rooms_lat": 80
+                            }
+                        },
+                        {
+                            "IS": {
+                                "rooms_type": "Small Group"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "EQ": {
+                        "rooms_seats": 54
+                    }
+                }
+            ]
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "rooms_shortname",
+                "rooms_seats"
+            ],
+            "ORDER": "rooms_shortname"
+        }
+    },
+    "isQueryValid": true,
+    "result":[{"rooms_shortname":"ANGU","rooms_seats":54},{"rooms_shortname":"ANGU","rooms_seats":54},{"rooms_shortname":"ANGU","rooms_seats":54},{"rooms_shortname":"ANGU","rooms_seats":54},{"rooms_shortname":"FNH","rooms_seats":54},{"rooms_shortname":"HEBB","rooms_seats":54},{"rooms_shortname":"HEBB","rooms_seats":54},{"rooms_shortname":"HEBB","rooms_seats":54}]}

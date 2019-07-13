@@ -1,0 +1,16 @@
+{
+    "title": "m120000000000",
+    "query": {
+        "WHERE": {
+            "GT": {
+                "courses_avg": "99a"
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": ["courses_dept", "courses_avg"],
+            "ORDER": "courses_avg"
+        }
+    },
+    "isQueryValid": false,
+    "result": "Not implemented."
+}

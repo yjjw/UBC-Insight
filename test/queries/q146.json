@@ -1,0 +1,18 @@
+{
+    "title": "test room is",
+    "query": {
+        "WHERE": {
+            "IS": {
+                "rooms_address": "1822 East Mall"
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "rooms_type",
+                "rooms_furniture"
+            ]
+        }
+    },
+    "isQueryValid": true,
+    "result":[{"rooms_type":"Case Style","rooms_furniture":"Classroom-Fixed Tables/Movable Chairs"},{"rooms_type":"Open Design General Purpose","rooms_furniture":"Classroom-Movable Tables & Chairs"},{"rooms_type":"Open Design General Purpose","rooms_furniture":"Classroom-Movable Tables & Chairs"},{"rooms_type":"Case Style","rooms_furniture":"Classroom-Fixed Tables/Movable Chairs"},{"rooms_type":"Open Design General Purpose","rooms_furniture":"Classroom-Fixed Tables/Movable Chairs"}]
+}

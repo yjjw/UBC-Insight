@@ -1,0 +1,36 @@
+{
+    "title": "query from d2 example",
+    "query": {
+        "WHERE": {
+            "AND": [{
+                "IS": {
+                    "rooms2_furniture": "*Tables*"
+                }
+            }, {
+                "GT": {
+                    "rooms2_seats": 300
+                }
+            }]
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "rooms2_shortname",
+                "maxSeats"
+            ],
+            "ORDER": {
+                "dir": "DOWN",
+                "keys": ["maxSeats"]
+            }
+        },
+        "TRANSFORMATIONS": {
+            "GROUP": ["rooms2_shortname"],
+            "APPLY": [{
+                "maxSeats": {
+                    "MAX": "rooms2_seats"
+                }
+            }]
+        }
+    },
+    "isQueryValid": true,
+    "result":[{"rooms2_shortname":"OSBO","maxSeats":442},{"rooms2_shortname":"HEBB","maxSeats":375},{"rooms2_shortname":"LSC","maxSeats":350}]
+}

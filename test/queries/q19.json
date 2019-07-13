@@ -1,0 +1,19 @@
+{
+  "title": "19000000000",
+  "query": {
+      "WHERE": {
+          "EQ": {
+              "courses_avg":95
+          }
+      },
+      "OPTIONS": {
+          "COLUMNS": [
+              "courses_dept",
+              "courses_avg"
+          ],
+          "ORDER": "courses_i"
+      }
+},
+  "isQueryValid": false,
+  "result": "Not implemented."
+}

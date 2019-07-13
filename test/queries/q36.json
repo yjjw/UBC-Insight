@@ -1,0 +1,19 @@
+{
+    "title": "36000000 incorrect options",
+    "query": {
+        "WHERE": {
+            "GT": {
+                "courses_avg":97
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": {
+                "courses_dept":0,
+                "courses_avg":0
+            },
+            "ORDER": "courses_avg"
+        }
+    },
+    "isQueryValid": false,
+    "result": "Not implemented."
+}

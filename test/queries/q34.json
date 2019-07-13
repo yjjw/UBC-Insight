@@ -1,0 +1,38 @@
+{
+    "title": "q3444444444444444444444",
+    "query": {
+        "WHERE": {
+            "AND": [
+                {
+                    "AND":[
+                        {
+                            "GT": {
+                                "courses_avg":90
+                            }
+                        },
+                        {
+                            "IS": {
+                                "courses_dept":"1234"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "EQ": {
+                        "courses_avg":95
+                    }
+                }
+            ]
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_id",
+                "courses_avg"
+            ],
+            "ORDER": "courses_avg"
+        }
+    },
+    "isQueryValid": true,
+    "result": []
+}

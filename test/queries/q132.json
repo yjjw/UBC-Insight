@@ -1,0 +1,19 @@
+{
+    "title": "cover EQ courses_year",
+    "query": {
+        "WHERE": {
+            "EQ": {
+                "courses_year": 2006
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_avg"
+            ],
+            "ORDER": "courses_avg"
+        }
+    },
+    "isQueryValid": true,
+    "result":[]
+}

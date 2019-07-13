@@ -1,0 +1,19 @@
+{
+    "title": "cover EQ courses_fail",
+    "query": {
+        "WHERE": {
+            "EQ": {
+                "courses_fail": 44
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_avg"
+            ],
+            "ORDER": "courses_avg"
+        }
+    },
+    "isQueryValid": true,
+    "result":[{"courses_dept":"busi","courses_avg":61.21},{"courses_dept":"math","courses_avg":62.57},{"courses_dept":"chem","courses_avg":63.33},{"courses_dept":"econ","courses_avg":66.76},{"courses_dept":"econ","courses_avg":66.85},{"courses_dept":"math","courses_avg":67.3},{"courses_dept":"psyc","courses_avg":67.94},{"courses_dept":"geob","courses_avg":67.95},{"courses_dept":"psyc","courses_avg":68.16},{"courses_dept":"biol","courses_avg":68.27},{"courses_dept":"fmst","courses_avg":68.91},{"courses_dept":"phil","courses_avg":70.18},{"courses_dept":"math","courses_avg":71.6},{"courses_dept":"apsc","courses_avg":72.03},{"courses_dept":"clst","courses_avg":73.21}]
+}

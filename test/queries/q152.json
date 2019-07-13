@@ -1,0 +1,19 @@
+{
+    "title": "test room columns",
+    "query": {
+        "WHERE": {
+            "GT": {
+                "rooms_seats": 350
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "rooms_address",
+                "rooms_name",
+                "rooms_fullname"
+            ],
+            "ORDER": "rooms_name"
+        }
+    },
+    "isQueryValid": true,
+    "result":[{"rooms_address":"2260 West Mall, V6T 1Z4","rooms_name":"CIRS_1250","rooms_fullname":"Centre for Interactive  Research on Sustainability"},{"rooms_address":"2045 East Mall","rooms_name":"HEBB_100","rooms_fullname":"Hebb"},{"rooms_address":"6108 Thunderbird Boulevard","rooms_name":"OSBO_A","rooms_fullname":"Robert F. Osborne Centre"},{"rooms_address":"2194 Health Sciences Mall","rooms_name":"WOOD_2","rooms_fullname":"Woodward (Instructional Resources Centre-IRC)"}]}

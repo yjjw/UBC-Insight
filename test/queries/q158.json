@@ -1,0 +1,49 @@
+{
+    "title": "test room columns",
+    "query": {
+        "WHERE": {
+            "AND": [
+                {
+                    "IS": {
+                        "rooms_furniture": "Classroom-Fixed Tables/Movable Chair*"
+                    }
+                },
+                {
+                    "LT": {
+                        "rooms_lat": 49.2621
+                    }
+                }
+            ]
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "rooms_shortname",
+                "rooms_href",
+                "maxSeats"
+            ],
+            "ORDER": {
+                "dir": "DOWN",
+                "keys": [
+                    "maxSeats",
+                    "rooms_href"
+                ]
+            }
+        },
+        "TRANSFORMATIONS": {
+            "GROUP": [
+                "rooms_shortname",
+                "rooms_href"
+            ],
+            "APPLY": [
+                {
+                    "maxSeats": {
+                        "MAX": "rooms_seats"
+                    }
+                }
+            ]
+        }
+    },
+    "isQueryValid": true,
+    "result":[{"rooms_shortname":"DMP","rooms_href":"http://students.ubc.ca/campus/discover/buildings-and-classrooms/room/DMP-310","maxSeats":160},{"rooms_shortname":"DMP","rooms_href":"http://students.ubc.ca/campus/discover/buildings-and-classrooms/room/DMP-110","maxSeats":120},{"rooms_shortname":"DMP","rooms_href":"http://students.ubc.ca/campus/discover/buildings-and-classrooms/room/DMP-301","maxSeats":80},{"rooms_shortname":"MCML","rooms_href":"http://students.ubc.ca/campus/discover/buildings-and-classrooms/room/MCML-160","maxSeats":72},{"rooms_shortname":"FSC","rooms_href":"http://students.ubc.ca/campus/discover/buildings-and-classrooms/room/FSC-1003","maxSeats":65},{"rooms_shortname":"FSC","rooms_href":"http://students.ubc.ca/campus/discover/buildings-and-classrooms/room/FSC-1001","maxSeats":65},{"rooms_shortname":"FORW","rooms_href":"http://students.ubc.ca/campus/discover/buildings-and-classrooms/room/FORW-303","maxSeats":63},{"rooms_shortname":"ORCH","rooms_href":"http://students.ubc.ca/campus/discover/buildings-and-classrooms/room/ORCH-4016","maxSeats":25},{"rooms_shortname":"ORCH","rooms_href":"http://students.ubc.ca/campus/discover/buildings-and-classrooms/room/ORCH-4004","maxSeats":25},{"rooms_shortname":"ORCH","rooms_href":"http://students.ubc.ca/campus/discover/buildings-and-classrooms/room/ORCH-4002","maxSeats":25},{"rooms_shortname":"ORCH","rooms_href":"http://students.ubc.ca/campus/discover/buildings-and-classrooms/room/ORCH-3016","maxSeats":25}]
+}
+

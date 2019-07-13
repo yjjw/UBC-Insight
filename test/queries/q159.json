@@ -1,0 +1,18 @@
+{
+    "title": "filter by partial href",
+    "query": {
+        "WHERE": {
+            "IS": {
+                "rooms_href": "*ttp://students.ubc.ca/campus/discover/buildings-and-classrooms/room/DMP-31*"
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "rooms_name",
+                "rooms_address"
+            ]
+        }
+    },
+    "isQueryValid": true,
+    "result":[{"rooms_name":"DMP_310","rooms_address":"6245 Agronomy Road V6T 1Z4"}]
+}

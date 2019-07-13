@@ -1,0 +1,30 @@
+{
+    "title": "test AND 2",
+    "query": {
+        "WHERE": {
+            "AND": [
+                {
+                    "IS": {
+                        "courses_instructor": "bishundayal, deonarine"
+                    }
+                },
+                {
+                    "LT": {
+                        "courses_avg": 85
+                    }
+                }
+            ]
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_year",
+                "courses_id",
+                "courses_avg"
+            ],
+            "ORDER": "courses_avg"
+        }
+    },
+    "isQueryValid": true,
+    "result":[{"courses_dept":"adhe","courses_year":2014,"courses_id":"330","courses_avg":78.85},{"courses_dept":"adhe","courses_year":2015,"courses_id":"330","courses_avg":78.94},{"courses_dept":"adhe","courses_year":2014,"courses_id":"330","courses_avg":79.5},{"courses_dept":"adhe","courses_year":2014,"courses_id":"330","courses_avg":80.4},{"courses_dept":"adhe","courses_year":2014,"courses_id":"330","courses_avg":82},{"courses_dept":"adhe","courses_year":2009,"courses_id":"330","courses_avg":82.25},{"courses_dept":"adhe","courses_year":2015,"courses_id":"330","courses_avg":82.79},{"courses_dept":"adhe","courses_year":2010,"courses_id":"330","courses_avg":83.16},{"courses_dept":"adhe","courses_year":2013,"courses_id":"330","courses_avg":83.29},{"courses_dept":"adhe","courses_year":2014,"courses_id":"330","courses_avg":83.45},{"courses_dept":"adhe","courses_year":2012,"courses_id":"330","courses_avg":83.64},{"courses_dept":"adhe","courses_year":2014,"courses_id":"330","courses_avg":83.68},{"courses_dept":"adhe","courses_year":2013,"courses_id":"330","courses_avg":83.74},{"courses_dept":"adhe","courses_year":2016,"courses_id":"330","courses_avg":83.87},{"courses_dept":"adhe","courses_year":2015,"courses_id":"330","courses_avg":84.42},{"courses_dept":"adhe","courses_year":2015,"courses_id":"330","courses_avg":84.71}]
+}

@@ -1,0 +1,20 @@
+{
+    "title": "23000000000 empty string logic filter (or)",
+  "query": {
+      "WHERE": {
+          "OR":[
+              {},
+              {}
+          ]
+      },
+      "OPTIONS": {
+          "COLUMNS": [
+              "courses_dept",
+              "courses_avg"
+          ],
+          "ORDER": "courses_avg"
+      }
+},
+  "isQueryValid": false,
+  "result": "Not implemented."
+}

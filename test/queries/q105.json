@@ -1,0 +1,19 @@
+{
+    "title": "Astro: Should be able to find sections taught by a specific person",
+    "query": {
+        "WHERE": {
+            "IS": {
+                "courses_instructor": "little, james joseph"
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_id",
+                "courses_avg"
+            ]
+        }
+    },
+    "isQueryValid": true,
+    "result":[{"courses_dept":"cpsc","courses_id":"110","courses_avg":73.83},{"courses_dept":"cpsc","courses_id":"110","courses_avg":67.82},{"courses_dept":"cpsc","courses_id":"110","courses_avg":70.47},{"courses_dept":"cpsc","courses_id":"110","courses_avg":67.79},{"courses_dept":"cpsc","courses_id":"322","courses_avg":74.88},{"courses_dept":"cpsc","courses_id":"425","courses_avg":74.43},{"courses_dept":"cpsc","courses_id":"425","courses_avg":73.17}]
+}

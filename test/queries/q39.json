@@ -1,0 +1,19 @@
+{
+    "title": "q3999999999999999999999",
+    "query":    {
+        "WHERE": {
+            "GT": [
+                "courses_avg"
+            ]
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_avg"
+            ],
+            "ORDER": "courses_avg"
+        }
+    },
+    "isQueryValid": false,
+    "result": "Not implemented."
+}

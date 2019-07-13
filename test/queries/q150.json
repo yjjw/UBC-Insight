@@ -1,0 +1,30 @@
+{
+    "title": "test without order",
+    "query": {
+        "WHERE": {
+            "GT": {
+                "rooms_seats": 350
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "rooms_furniture",
+                "overallAvg"
+            ]
+        },
+        "TRANSFORMATIONS": {
+            "GROUP": [
+                "rooms_furniture"
+            ],
+            "APPLY": [
+                {
+                    "overallAvg": {
+                        "AVG": "rooms_seats"
+                    }
+                }
+            ]
+        }
+    },
+    "isQueryValid": true,
+    "result":[{"rooms_furniture":"Classroom-Fixed Tablets","overallAvg":464.5},{"rooms_furniture":"Classroom-Fixed Tables/Fixed Chairs","overallAvg":375},{"rooms_furniture":"Classroom-Movable Tables & Chairs","overallAvg":442}]
+}

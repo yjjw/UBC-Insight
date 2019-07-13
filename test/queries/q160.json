@@ -1,0 +1,18 @@
+{
+    "title": "filter by partial fullname",
+    "query": {
+        "WHERE": {
+            "IS": {
+                "rooms_fullname": "*ugh Dempster Pavilion"
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "rooms_fullname",
+                "rooms_address"
+            ]
+        }
+    },
+    "isQueryValid": true,
+    "result":[{"rooms_fullname":"Hugh Dempster Pavilion","rooms_address":"6245 Agronomy Road V6T 1Z4"},{"rooms_fullname":"Hugh Dempster Pavilion","rooms_address":"6245 Agronomy Road V6T 1Z4"},{"rooms_fullname":"Hugh Dempster Pavilion","rooms_address":"6245 Agronomy Road V6T 1Z4"},{"rooms_fullname":"Hugh Dempster Pavilion","rooms_address":"6245 Agronomy Road V6T 1Z4"},{"rooms_fullname":"Hugh Dempster Pavilion","rooms_address":"6245 Agronomy Road V6T 1Z4"}]
+}

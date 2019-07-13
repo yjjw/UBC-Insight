@@ -1,0 +1,24 @@
+{
+    "title": "test where{}",
+    "query": {
+        "WHERE": {},
+        "OPTIONS": {
+            "COLUMNS": [
+                "simple_dept",
+                "simple_avg"
+            ],
+            "ORDER": "simple_avg"
+        }
+    },
+    "isQueryValid": true,
+    "result": [
+        {
+            "simple_dept":"adhe",
+            "simple_avg":81.4
+        },
+        {
+            "simple_dept":"adhe",
+            "simple_avg":83
+        }
+    ]
+}

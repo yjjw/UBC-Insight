@@ -1,0 +1,50 @@
+{
+    "title": "test count with dept",
+    "query": {
+        "WHERE": {
+            "OR": [
+                {
+                    "IS": {
+                        "courses_dept": "japn"
+                    }
+                },
+                {
+                    "GT": {
+                        "courses_avg": 99
+                    }
+                }
+            ]
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_id",
+                "countDepts"
+            ],
+            "ORDER": {
+                "dir": "DOWN",
+                "keys": [
+                    "courses_id",
+                    "countDepts"
+                ]
+            }
+        },
+        "TRANSFORMATIONS": {
+            "GROUP": [
+                "courses_id"
+            ],
+            "APPLY": [
+                {
+                    "countDepts": {
+                        "COUNT": "courses_dept"
+                    }
+                },
+                {
+                    "maxPass": {
+                        "MAX": "courses_pass"
+                    }
+                }
+            ]
+        }
+    },
+    "isQueryValid": true,
+    "result":[{"courses_id":"574","countDepts":1},{"courses_id":"527","countDepts":1},{"courses_id":"416","countDepts":1},{"courses_id":"410","countDepts":1},{"courses_id":"408","countDepts":1},{"courses_id":"406","countDepts":1},{"courses_id":"315","countDepts":1},{"courses_id":"314","countDepts":1},{"courses_id":"312","countDepts":1},{"courses_id":"311","countDepts":1},{"courses_id":"303","countDepts":1},{"courses_id":"302","countDepts":1},{"courses_id":"301","countDepts":1},{"courses_id":"300","countDepts":1},{"courses_id":"251","countDepts":1},{"courses_id":"250","countDepts":1},{"courses_id":"213","countDepts":1},{"courses_id":"212","countDepts":1},{"courses_id":"211","countDepts":1},{"courses_id":"210","countDepts":1},{"courses_id":"151","countDepts":1},{"courses_id":"150","countDepts":1},{"courses_id":"103","countDepts":1},{"courses_id":"102","countDepts":1},{"courses_id":"101","countDepts":1},{"courses_id":"100","countDepts":1}]}

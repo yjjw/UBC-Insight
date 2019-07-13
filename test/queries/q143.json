@@ -1,0 +1,19 @@
+{
+    "title": "test room is",
+    "query": {
+        "WHERE": {
+            "IS": {
+                "rooms_shortname": "ALRD"
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "rooms_seats",
+                "rooms_type"
+            ],
+            "ORDER": "rooms_seats"
+        }
+    },
+    "isQueryValid": true,
+    "result":[{"rooms_seats":20,"rooms_type":"Open Design General Purpose"},{"rooms_seats":20,"rooms_type":"Open Design General Purpose"},{"rooms_seats":44,"rooms_type":"Open Design General Purpose"},{"rooms_seats":50,"rooms_type":"Case Style"},{"rooms_seats":94,"rooms_type":"Case Style"}]
+}
