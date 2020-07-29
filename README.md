@@ -1,6 +1,7 @@
 ### Introduction
 Restful web app to get information about courses and spaces.<br/>
 Please note that this project is completed by me and my partner -- Zehao Zhu.<br/>
+I made it public but you should not copy the code.
 ### Configuring your environment
 To start using this project, you need to get your computer configured so you can build and execute the code. To do this, follow these steps; the specifics of each step (especially the first two) will vary based on which operating system your computer has:<br/>
 1. Install git (at least version 2.9; after installing you should be able to execute git --version on the command line).<br/>
